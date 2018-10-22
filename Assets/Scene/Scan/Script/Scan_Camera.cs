@@ -39,6 +39,7 @@ public class Scan_Camera : MonoBehaviour {
         mat.SetVector("_WorldOriginPos", obj.transform.position);
         sr += Time.deltaTime*10;
         mat.SetFloat("_WorldRadius", sr);
+        mat.SetMatrix("_cammatrix", cam.cameraToWorldMatrix);
 	}
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)

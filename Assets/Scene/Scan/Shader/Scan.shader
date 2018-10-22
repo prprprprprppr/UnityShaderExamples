@@ -34,6 +34,7 @@
 			float4 _WorldOriginPos;
 			float _WorldRadius;
 			float4x4 _RayMatrix;
+			float4x4 _cammatrix;
 			
 			v2f vert (appdata_base v)
 			{
@@ -61,7 +62,15 @@
 			{
 				fixed4 col = tex2D(_MainTex,i.uv);
 				float depth = Linear01Depth(tex2D(_CameraDepthTexture,i.uv));
-				float3 ws = _WorldSpaceCameraPos + (i.viewray * depth);
+
+				//1.
+				float2 f2 = float2(unity_CameraProjection._11, unity_CameraProjection._22);
+				float3 vp = float3((i.uv * 2 - 1) / f2, -1) * depth * _ProjectionParams.z;
+				float3 ws = mul(_cammatrix, float4(vp,1));
+
+				//2.
+				//float3 ws = _WorldSpaceCameraPos + (i.viewray * depth);
+
 				float dis = distance(ws, _WorldOriginPos);
 				if (dis < _WorldRadius && dis > _WorldRadius - 1 && depth < 1)
 					col = float4(1, 1, 1, 1);
