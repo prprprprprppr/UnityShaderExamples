@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
-public class CameraBlurryEffect : MonoBehaviour {
+public class CameraSimpleBlurryEffect : MonoBehaviour {
 
     public Material mat;
     [Range(0,10)]

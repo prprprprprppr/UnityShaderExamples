@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Scan
-  m_Shader: {fileID: 4800000, guid: 8f11e0be9caac5d45bbae2745561c850, type: 3}
+  m_Name: Example_Unlit_SimpleNormal
+  m_Shader: {fileID: 4800000, guid: 1986893cadd94804c8ab27885bbead94, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,13 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 725591e26c155ad46bf32949a2b451cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 42398b17adad8b148a33c8a6453ccba9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _WorldRadius: 15.287016
-    m_Colors:
-    - _WorldOriginPos: {r: 0.43452987, g: -1.55, b: -3.2065456, a: 0}
+    - _Smooth: 50
+    m_Colors: []
