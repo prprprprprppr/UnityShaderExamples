@@ -11,7 +11,7 @@
 
 	SubShader{
 		Tags{ "RenderType" = "Opaque" }
-		LOD 300
+		LOD 300  
 
 		CGPROGRAM
 		#pragma surface surf BlinnPhong addshadow fullforwardshadows vertex:vert tessellate:tessDistance nolightmap

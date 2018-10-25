@@ -27,4 +27,4 @@ Material:
     - _Strength: 100
     m_Colors:
     - _SpecColor: {r: 1, g: 0, b: 0, a: 1}
-    - _WorldPos: {r: -5.0000005, g: 7.2050447, b: 0.060013305, a: 0}
+    - _WorldPos: {r: -5.0000005, g: 7.080742, b: -0.3318151, a: 0}
