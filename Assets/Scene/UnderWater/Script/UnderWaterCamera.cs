@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode,ImageEffectAllowedInSceneView]
-public class CameraEffect : MonoBehaviour {
+public class UnderWaterCamera: MonoBehaviour {
     public Material mat;
 
     // Use this for initialization

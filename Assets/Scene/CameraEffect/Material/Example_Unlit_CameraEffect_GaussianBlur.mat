@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Example_Unlit_GlobalSnow
-  m_Shader: {fileID: 4800000, guid: 6718dc482424bb94eb807435016590ce, type: 3}
+  m_Name: Example_Unlit_CameraEffect_GaussianBlur
+  m_Shader: {fileID: 4800000, guid: 97b078e38e914bb48b4f2da6c66975d1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -22,15 +22,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: 1fbad8bd979d8f54baa8d9cb9c8512e6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SnowTex:
-        m_Texture: {fileID: 2800000, guid: b2b6f199c669daf47aa6f89768bd31f9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendRatio: 1
-    - _SnowScale: 50
+    - _BlurSize: 1
     m_Colors: []

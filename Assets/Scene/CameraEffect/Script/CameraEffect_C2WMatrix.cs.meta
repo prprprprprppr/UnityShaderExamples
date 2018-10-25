@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9dea240f74c537741abc7ea9366247d4
+timeCreated: 1540444942
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shader: {instanceID: 0}
+  - SnowTex: {fileID: 2800000, guid: b2b6f199c669daf47aa6f89768bd31f9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
