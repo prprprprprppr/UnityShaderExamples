@@ -24,8 +24,6 @@ Makin' Stuff Look Good里面的教程
 
 4.noise
 
-![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Model.png)
-
 value+perlin+simplex+fbm
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/2DNoise.png)
