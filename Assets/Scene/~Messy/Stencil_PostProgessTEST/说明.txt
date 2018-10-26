@@ -1,0 +1,4 @@
+OnRenderImage 模板缓存被清空
+只能在OnPostRender里处理模板缓存
+试半天还是不懂为什么要这个顺序
+建议直接使用commandbuffer!

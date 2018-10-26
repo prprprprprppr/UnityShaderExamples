@@ -1,4 +1,4 @@
-﻿Shader "Example/Unlit/BaseUnlit"
+﻿Shader "Unlit/Example/Stencil_PostProgessTEST_outputStencil"
 {
 	Properties
 	{
@@ -9,6 +9,12 @@
 		Tags { "RenderType"="Opaque" }
 		LOD 100
 
+		Stencil{
+			Ref 2
+			Comp always
+			Pass replace
+		}
+
 		Pass
 		{
 			CGPROGRAM
@@ -16,6 +22,12 @@
 			#pragma fragment frag
 			
 			#include "UnityCG.cginc"
+
+			struct appdata
+			{
+				float4 vertex : POSITION;
+				float2 uv : TEXCOORD0;
+			};
 
 			struct v2f
 			{
@@ -26,11 +38,11 @@
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
 			
-			v2f vert (appdata_base v)
+			v2f vert (appdata v)
 			{
 				v2f o;
 				o.vertex = UnityObjectToClipPos(v.vertex);
-				o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
+				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				return o;
 			}
 			

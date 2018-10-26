@@ -12,7 +12,7 @@ public class CameraEffect_BlurRender : MonoBehaviour {
     {
         if (mat != null)
         {
-            RenderTexture rt = RenderTexture.GetTemporary(source.width,source.height,0,RenderTextureFormat.ARGBFloat);
+            RenderTexture rt = RenderTexture.GetTemporary(source.width, source.height, 0, RenderTextureFormat.ARGBFloat);
             for (int i = 0; i < Intensity; i++)
             {
                 Graphics.Blit(source, rt, mat, 0);
