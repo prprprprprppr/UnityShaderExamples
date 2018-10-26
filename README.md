@@ -2,19 +2,21 @@
 
 拙劣的shader效果
 
-1.温斯顿的盾😅(Cover)
+1.CameraEffect
+
+边缘检测
+
+高斯模糊
+
+全局雪
+
+2.温斯顿的盾😅(Cover)
 
 Makin' Stuff Look Good里面的教程
 
 本质上只是depth的应用加上动态纹理的效果.
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Cover.png)
-
-2.Camera效果(GlobalSnow)
-
-深度值还原为世界坐标,使用xz对雪纹理采样(待优化)
-
-![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/GlobalSnow.jpg)
 
 3.模型效果(Model)
 
@@ -48,9 +50,13 @@ ParallaxHeightwithShadow2-加阴影的优化
 
 5.外边框(Outline)
 
-commandbuffer+高斯模糊
+鼠标指向的外发光(CommandBuffer+高斯模糊)
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Outline.gif)
+
+四种卡通外边框(View+z偏移+normal偏移+sobel边缘检测屏幕效果)
+
+![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Outline.png)
 
 6.鼠标指向+shader(RaycastLight)
 
