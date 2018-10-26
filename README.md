@@ -22,7 +22,23 @@ Makin' Stuff Look Good里面的教程
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Model.png)
 
-4.一些高度纹理的效果(NormalMapHeightMap)
+4.noise
+
+![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Model.png)
+
+value+perlin+simplex+fbm
+
+![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/2DNoise.png)
+
+3DNoiseTest
+
+![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/3DNoiseTest.png)
+
+VoronoiNoise
+
+![image](https://github.com/prprprprprppr/UnityShaderExamples/blob/master/pic/VoronoiNoise.png)
+
+5.一些高度纹理的效果(NormalMapHeightMap)
 
 SimpleHeight-直接偏移uv采样(视角较平时失真严重)
 
@@ -48,7 +64,7 @@ ParallaxHeightwithShadow2-加阴影的优化
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/ParallaxHeightwithShadow2.jpg)
 
-5.外边框(Outline)
+6.外边框(Outline)
 
 鼠标指向的外发光(CommandBuffer+高斯模糊)
 
@@ -58,23 +74,23 @@ ParallaxHeightwithShadow2-加阴影的优化
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Outline.png)
 
-6.鼠标指向+shader(RaycastLight)
+7.鼠标指向+shader(RaycastLight)
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/SimpleMouseRay.gif)
 
-7.地图扫描(Scan)
+8.地图扫描(Scan)
 
 两种深度值转化为世界坐标的方法
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Scan.gif)
 
-8.雪地(Snow)
+9.雪地(Snow)
 
 Tessellation SurfaceShader的使用
 
 ![image](https://github.com/prprprprprppr/UnityShaderExamples/raw/master/pic/Snow.gif)
 
-9.海底(UnderWater)
+10.海底(UnderWater)
 
 简单深度雾效+simplexNoise
 
